@@ -20,6 +20,8 @@ nav,#title,#line{
     height:100px;
     left:60%;
     bottom:0;
+    background:red;
+    opacity:.5;
     transform: scale(1.1,1) translate(-50%,50%) rotate(2.4deg);
 }
 h1,h5{

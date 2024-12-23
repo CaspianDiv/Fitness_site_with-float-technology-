@@ -9,7 +9,7 @@ header{
     background: url('../img/header_bg.jpg')60% 50%/cover;
     text-align: center;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 nav{top: 40px;}
 nav,#title,#line{
@@ -17,13 +17,13 @@ nav,#title,#line{
     position: absolute;
 }
 #line{
-    height:100px;
-    left:60%;
-    bottom:0;
-    background: #fd3634;
-    width:100%;
-    opacity:.5;
-    transform: scale(1.1,1) translate(-50%,50%) rotate(-2.4deg);
+    height: 100px;
+    width: 100%;
+    left: 60%;
+    bottom: 0;
+    background: var(--qirmizi);
+    opacity: .5;
+    transform: scale(1.1 ,1) translate(-50%,50%) rotate(-2.4deg);
 }
 h1,h5{
     text-transform: uppercase;
@@ -44,6 +44,7 @@ h2{
 h6{
     font: .8em "Proxima Nova";
 }
+
 h4{
     font: 300 2em "Open Sans",sans-serif;
     text-transform: uppercase;
@@ -51,7 +52,7 @@ h4{
 }
 .bgyasil p{
     font: 400 .8em "Open Sans",sans-serif;
-    padding: 32px 0;
+    padding: 50px 10px 10px 50px;
     color: var(--ag);
 }
 h1 span{color: var(--yasil);}
@@ -119,18 +120,26 @@ menu li a{
 .txtag{color: var(--ag);}
 .txtqirmizi{color: var(--qirmizi);}
 .txtyasil{color: var(--yasil);}
-.artpadding{padding: 70px 30px;}
+.artpadding{padding: 80px 40px;}    
 .height50{min-height: 50vh;}
 .bgag{background: var(--ag);}
 .bgqirmizi{background: var(--qirmizi);}
 
 #fitnessfirst{background: url("../img/fitnessfirst.jpg")center/cover;}
 #yourbody{background: url('../img/yourbody.jpg')center/cover;}
-#lifestyle{background: url('../img/lifestyle.jpg')center/cover;}
+#lifestyle{
+    background: url('../img/lifestyle.jpg')center/cover;
+    min-height: 53vh;
+}
 #summeroffun{background: url('../img/summeroffun.jpg')center/cover;}
 #grape{background: url('../img/grape_black.jpg')center/cover;}
 #mango-avokado{background: url('../img/mango_avokado.jpg') 30% 70%/cover;}
-
+.container{
+    padding: 20px 50px 0 50px;
+}
+#ftbg2{
+    padding: 20px 20px;
+}
 
 footer{
     height: 100vh;
@@ -142,6 +151,7 @@ footer h1{
     padding: 70px 130px 10px 130px;
     text-align: center;
 }
+
 footer p{
     font: 400 1em "Open Sans",sans-serif;
     color: var(--ag);
@@ -154,7 +164,7 @@ footer p{
 }
 #ftbg2{
     background: url('../img/ftbg2.jpg')center/cover;
-    height: 70vh;
+    height: 65vh;
 }
 #ftbg2 h6{
     font: 400 .8em "Open Sans",sans-serif;
@@ -179,10 +189,13 @@ footer p{
     border-radius: 20px;
     margin: 5px 0;
     outline: none;
+    width: 100%;
     cursor: pointer;
     border: none;
 }
-
+.box3{
+    padding: 0;
+}
 button{
     display: inline-block;
     width: 182px;
@@ -196,22 +209,32 @@ button{
     border-radius: 20px;
     margin: 0 0 0 5px;
 }
-
+.container{
+    padding: 0 50px 0 50px;
+}
 @media only screen  and (min-width: 768px){
     
     .container{
-        width: 90%;
+        width: 100%;
         margin: auto;
     }
+     menu li a:hover{
+        border-bottom: 5px solid var(--yasil);
+        color: var(--qirmizi);
+        border-radius: 10px;
+     }
+     menu li a{
+        transition: 250ms all;
+     }
     header{
         text-align: initial;
         width: 100%;
     }
-    
+    .heightbgyasil{min-height: 324px;}
     menu{
         float: right;
     }
-
+    .artpadding2{padding: 70px 30px;}  
     menu li{
         display: inline-block;
         margin: 0 10px;
@@ -231,7 +254,6 @@ button{
         clear: both;
         display: table;
     }
-
     .fleft{float: left;}
     .fright{float: right;}
     .col33{width: 33.33%;}
